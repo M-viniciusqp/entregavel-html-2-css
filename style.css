@@ -1,0 +1,296 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.2);
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* =========================
+   ARTIGOS
+========================= */
+
+main {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    margin-bottom: 25px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+article h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+article p {
+    color: #64748b;
+    margin-bottom: 15px;
+    max-width: 750px;
+}
+
+article img {
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+    transition: 0.3s;
+}
+
+article img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+aside {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+aside h2 {
+    font-size: 27px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+aside h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s;
+}
+
+input:hover,
+select:hover {
+    border-color: #cbd5e1;
+}
+
+input:focus,
+select:focus {
+    background-color: white;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+/* =========================
+   LINHA DO FORMULÁRIO
+========================= */
+
+.linha {
+    display: flex;
+    gap: 18px;
+}
+
+.linha .campo {
+    width: 50%;
+}
+
+/* =========================
+   TERMOS
+========================= */
+
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: normal;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.termos input {
+    width: 17px;
+    height: 17px;
+    accent-color: #6366f1;
+    cursor: pointer;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main,
+    aside {
+        padding: 25px 20px;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+
+    .linha .campo {
+        width: 100%;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+    }
+}
