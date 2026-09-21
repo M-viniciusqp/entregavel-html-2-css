@@ -1,6 +1,6 @@
-# entregavel-html-1
+# entregavel-html 2 / css
 
-entregável de HTML 
+entregável de HTML / css
 
 aluno: Marcus Vinicius Mendes Leite
 
